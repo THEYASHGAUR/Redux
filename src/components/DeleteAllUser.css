@@ -1,0 +1,15 @@
+.delete{
+    float: right;
+}
+
+.deleteAllUser{
+    background-color: red;
+    display: flex-end;
+    font-size: 17px;
+    flex-direction: column;
+    padding: 10px 12px;
+    color: white;
+    /* width: 8%; */
+    cursor: pointer;
+    border-radius: 5px;
+}
