@@ -12,9 +12,7 @@ const UserDetails = () => {
   const Dispatch = useDispatch();
 
   const AddNewUser = (id) => {
-    console.log("first console")
     Dispatch(addUser(id));  
-    console.log("add user here");
 
   };
   // const deleteAllUser = (id) =>{
