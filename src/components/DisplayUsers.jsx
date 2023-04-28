@@ -10,8 +10,8 @@ const DisplayUsers = () =>{
     const data = useSelector((state)=>{
         return state.users;
     });
-    const deleteUser = (id) =>{
-        Dispatch(removeUser(id));
+    const deleteUser = () =>{
+        Dispatch(removeUser());
 
     }
     console.log(data);
@@ -20,7 +20,7 @@ const DisplayUsers = () =>{
             data.map((user,id)=>{
                 return <li key={id}>
                     {user}
-                    <button className="btn-delete" onClick={deleteUser(id)}>
+                    <button className="btn-delete" onClick={deleteUser}>
                         <MdDeleteForever className="delete-icon" />
 
                     </button>
